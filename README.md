@@ -1,2 +1,0 @@
-# Ecommerce
-Advanced Ecommerce WebApp
