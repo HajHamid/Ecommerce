@@ -14,6 +14,7 @@ from users.utils import send_sms
 def create_and_send_otp(phone_number: str):
     if OTP.can_send_code(phone_number):
         code = OTP.generate_code()
+        # code = "123456"
         otp_session_token = secrets.token_urlsafe(32)
 
         OTP.objects.create(

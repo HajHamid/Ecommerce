@@ -8,5 +8,6 @@ urlpatterns = [
     # path('login/refresh/', TokenRefreshView.as_view(), name='user-login-refresh'),
     # path('register/', views.UserRegisterView.as_view(), name='user-register'),
     path('request-otp/', views.SendOTPView.as_view(), name='send-request-otp'),
-    path('verify-otp/', views.VerfiyOTPView.as_view(), name='verify-otp')
+    path('verify-otp/', views.VerfiyOTPView.as_view(), name='verify-otp'),
+    path('login/', views.VerifyUserTestView.as_view(), name='user-login')
 ]
